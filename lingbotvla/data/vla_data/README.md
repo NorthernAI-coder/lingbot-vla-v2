@@ -156,6 +156,8 @@ actions:
       subtract_state: False
 ```
 
+> <p><span style="color:red; font-size:1.em; font-weight:bold;">Note</span>: We recommend setting <code>subtract_state</code> of <code>action.arm.position</code> to <code>True</code> and for<code>action.effector.position</code> to <code>False</code> when training the model with real-world data. See <a href="../../../configs/robot_configs/agilex_cobot_magic.yaml"><code>configs/robot_configs/agilex_cobot_magic.yaml</code></a> for a complete example.</p>
+
 ### Images
 
 `images` maps raw camera keys to the unified camera names declared in the VLA training config.

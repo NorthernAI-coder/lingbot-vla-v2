@@ -88,7 +88,7 @@ train:
     depth:
       model_type: MoRGBD
       moge_path: /path/to/depth/moge2-vitb-normal.pt
-      morgbd_path: /path/to/depth/morgbd_v2_mixdata.pt
+      morgbd_path: /path/to/depth/model.pt
       num_layers: 1
       num_heads: 4
       dim_head: 32

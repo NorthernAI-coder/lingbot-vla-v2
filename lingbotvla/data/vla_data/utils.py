@@ -227,7 +227,7 @@ class FeatureTransform:
                         if 'velocity' in target_feature or 'effector.position' in target_feature:
                             assert not action_subtract_state[target_feature], f"{target_feature} cannot be subtracted from state"
 
-                        action_relative_type[target_feature] = feature_convert_info[target_feature].pop('relative_type', 'subtract')
+                        action_relative_type[target_feature] = feature_convert_info[target_feature].pop('relative_type', 'quaternion_local')
                         if_convert_from_state = feature_convert_info[target_feature].pop('convert_from_state', False)
                         if if_convert_from_state:
                             actions_convert_from_state.add(target_feature)
